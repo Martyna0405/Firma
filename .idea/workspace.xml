@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81609e28-cbe3-4564-9955-ee934e3af4a0" name="Changes" comment="only delete is left">
+    <list default="true" id="81609e28-cbe3-4564-9955-ee934e3af4a0" name="Changes" comment="option">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Firma/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/Firma/Company.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Firma/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/Firma/Employee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Firma/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Firma/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Firma/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/Firma/Utils.java" afterDir="false" />
     </list>
@@ -80,7 +82,8 @@
       <workItem from="1737031830668" duration="106000" />
       <workItem from="1737032196993" duration="8000" />
       <workItem from="1737032215567" duration="15678000" />
-      <workItem from="1737115846544" duration="14475000" />
+      <workItem from="1737115846544" duration="16465000" />
+      <workItem from="1737146025933" duration="2317000" />
     </task>
     <task id="LOCAL-00001" summary="only delete is left">
       <option name="closed" value="true" />
@@ -90,7 +93,23 @@
       <option name="project" value="LOCAL" />
       <updated>1737069741980</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="only delete is left">
+      <option name="closed" value="true" />
+      <created>1737134346553</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1737134346553</updated>
+    </task>
+    <task id="LOCAL-00003" summary="option">
+      <option name="closed" value="true" />
+      <created>1737134482451</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1737134482451</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,6 +117,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="only delete is left" />
-    <option name="LAST_COMMIT_MESSAGE" value="only delete is left" />
+    <MESSAGE value="option" />
+    <option name="LAST_COMMIT_MESSAGE" value="option" />
   </component>
 </project>

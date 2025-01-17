@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Company company = Utils.Dane();
+        Company company = Utils.Data();
         System.out.println("Witamy w panelu administracyjnym firmy " + company.getName());
 
         int L = Company.employees.size();
@@ -38,10 +38,10 @@ public class Main {
                         break;
                     case 2:
                         System.out.println("----------------");
-                        String name = Utils.newemployee("Podaj imię: ");
-                        String surname = Utils.newemployee("Podaj nazwisko: ");
+                        String name = Utils.newEmployee("Podaj imię pracownika: ");
+                        String surname = Utils.newEmployee("Podaj jego nazwisko: ");
                         company.addEmployee(name, surname);
-                        Utils.text("Dodano pracownika");
+                        Utils.text("Dodano pracownika do oddziału ADMINISTRACJA");
                         break;
                     case 3:
                         System.out.println("Wybierz którego pracownika chcesz zwolnić:");
@@ -50,7 +50,7 @@ public class Main {
                         System.out.println("----------------");
                         int numer = Utils.index("Prosimy podać numer indeksu od 0 do "+(L-1)+" :");
                         company.removeEmployee(numer);
-                        System.out.println("Zwolniono pracownika.");
+                        System.out.println("Zwolniono pracownika");
                         break;
                     default:
                         System.out.println("Prosimy wybrać numer operacji.");

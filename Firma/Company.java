@@ -23,13 +23,13 @@ public class Company {
         this.name = name;
     }
 
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
+//    public String getAddress() {
+//        return address;
+//    }
+//
+//    public void setAddress(String address) {
+//        this.address = address;
+//    }
 
     public List<Employee> getEmployees() {
         return employees;
@@ -45,5 +45,6 @@ public class Company {
     public void removeEmployee(int numer) {
         employees.remove(numer);
     }
+
 }
 

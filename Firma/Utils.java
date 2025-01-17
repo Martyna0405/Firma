@@ -4,7 +4,8 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Utils {
-    static Company Dane() {
+
+    static Company Data() {
         Company company = new Company("Multicristal", "Ulica");
 
         Person firstPerson = new Person("Weronika", "Nowak");
@@ -16,10 +17,12 @@ public class Utils {
         Person thirdPerson = new Person("Aleksandra", "Koral");
         Employee thirdEmployee = new Employee(thirdPerson, Departament.FINANCE);
 
+
         List<Employee> employees = company.getEmployees();
         employees.add(firstEmployee);
         employees.add(secondEmployee);
         employees.add(thirdEmployee);
+
 
         return company;
     }
@@ -30,7 +33,7 @@ public class Utils {
         System.out.println();
     }
 
-    static String newemployee(String message) {
+    static String newEmployee(String message) {
         Scanner input = new Scanner(System.in);
         System.out.print(message);
         return input.nextLine();
