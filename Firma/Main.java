@@ -26,9 +26,9 @@ public class Main {
                 System.out.println("Wybierz 2 jeśli chcesz dodać pracownika");
                 System.out.println("Wybierz 3 jeśli chcesz zwolnić pracownika");
 
-                int opcja = input.nextInt();
+                int option = input.nextInt();
 
-                switch (opcja) {
+                switch (option) {
                     case 0:
                         Utils.text("Proces został zakończony. Dziękujemy za skorzystanie z panelu naszej firmy. Żegnaj!");
                         done = true;
