@@ -7,7 +7,7 @@ public class Company {
     private String name;
     private String address;
 
-    private List<Employee> employees;
+    public static List<Employee> employees;
 
     public Company(String name, String address) {
         this.name = name;
@@ -41,4 +41,9 @@ public class Company {
 
         employees.add(employee);
     }
+
+    public void removeEmployee(int numer) {
+        employees.remove(numer);
+    }
 }
+

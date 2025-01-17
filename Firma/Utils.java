@@ -1,12 +1,11 @@
 package Firma;
 
-import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
 public class Utils {
-    static Company Dane(){
-        Company company = new Company("Multicristal","Ulica");
+    static Company Dane() {
+        Company company = new Company("Multicristal", "Ulica");
 
         Person firstPerson = new Person("Weronika", "Nowak");
         Employee firstEmployee = new Employee(firstPerson, Departament.SALES);
@@ -17,7 +16,7 @@ public class Utils {
         Person thirdPerson = new Person("Aleksandra", "Koral");
         Employee thirdEmployee = new Employee(thirdPerson, Departament.FINANCE);
 
-        List<Employee>employees = company.getEmployees();
+        List<Employee> employees = company.getEmployees();
         employees.add(firstEmployee);
         employees.add(secondEmployee);
         employees.add(thirdEmployee);
@@ -25,14 +24,20 @@ public class Utils {
         return company;
     }
 
-    static void text (String message){
+    static void text(String message) {
         System.out.println();
         System.out.println(message);
         System.out.println();
     }
-    static String newemployee(String message){
+
+    static String newemployee(String message) {
         Scanner input = new Scanner(System.in);
         System.out.print(message);
         return input.nextLine();
+    }
+    static int index(String message){
+        Scanner input = new Scanner(System.in);
+        System.out.print(message);
+        return input.nextInt();
     }
 }

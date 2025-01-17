@@ -2,14 +2,16 @@ package Firma;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
-import java.util.ArrayList;
-import java.util.List;
+
 
 
 public class Main {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
         Company company = Utils.Dane();
         System.out.println("Witamy w panelu administracyjnym firmy " + company.getName());
+
+        int L = Company.employees.size();
 
         boolean done = false;
         while (!done) {
@@ -35,13 +37,20 @@ public class Main {
                         System.out.println(company.getEmployees().toString());
                         break;
                     case 2:
+                        System.out.println("----------------");
                         String name = Utils.newemployee("Podaj imię: ");
                         String surname = Utils.newemployee("Podaj nazwisko: ");
                         company.addEmployee(name, surname);
                         Utils.text("Dodano pracownika");
                         break;
                     case 3:
-
+                        System.out.println("Wybierz którego pracownika chcesz zwolnić:");
+                        System.out.println("----------------");
+                        System.out.println(company.getEmployees().toString());
+                        System.out.println("----------------");
+                        int numer = Utils.index("Prosimy podać numer indeksu od 0 do "+(L-1)+" :");
+                        company.removeEmployee(numer);
+                        System.out.println("Zwolniono pracownika.");
                         break;
                     default:
                         System.out.println("Prosimy wybrać numer operacji.");
